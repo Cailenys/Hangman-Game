@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+
+
+    <!-- Stylesheet: -->
+    <link rel="stylesheet" href="./css/hangman.css">
+    
+    <!-- Script(s): -->
+    <script type="text/javascript" src="./javascript/hangman.js" defer></script>
+  
+</head>
+
+<body>
+    <header>
+        <div class=header>
+            <img src="images/hangman.png" alt="Picture refers to game portfolio">
+            <h1>Welcome to Hangman!!</h1>
+            
+            <p>Enter a guess to begin.</p>
+        </div>
+    </header>
+
+    <form action="#" method="GET">
+        <label for="guess">
+            Enter a guess:
+            <input type="text" name="guess" maxlength="1">
+        </label>
+        <input type="submit" value="Guess!">
+    </form>
+    <dl>
+        <dt>Word</dt>
+        <dd class="word"></dd>
+        <dt>Chances</dt>
+        <dd class="chances"></dd>
+        <dt>Previous Guesses</dt>
+        <dd>
+            <ul class="previous-guesses"></ul>
+        </dd>
+    </dl>
+</body>
+
+</html>
